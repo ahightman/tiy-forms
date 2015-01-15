@@ -9,69 +9,58 @@
 
 <body>
  <div class="wrapper">
-  <form method="get" action="/save-user">
+  <div class="container">
+    <form method="get" action="/save-user">
 
     <div>
-      <label>
-        Full Name
-        <input type="text" placeholder="Name" name="userName">
-      </label>
+      <input type="text" placeholder="Name" name="userName">
     </div>
 
     <div>
-      <label>
-        Telephone Number
-        <input type="tel" placeholder="Phone" name="userPhone">
-      </label>
+      <input type="tel" placeholder="Phone" name="userPhone">
+    </div>
+    <input type="checkbox" name="notifyPref" value="SMS">
+    <label>SMS Notifications</label>
+
+    <div>
+      <input type="email" placeholder="Email Address" name="userEmail">
     </div>
 
-    <div>
-      <label>
-        Email Address
-        <input type="email" placeholder="Email Address" name="userEmail">
-      </label>
+      <input type="checkbox" name="notifyPref" value="Email">
+      <label>Email Notifications</label>
 
     <div>
-      <label>Occupation
         <select name="occupation">
-          <option selected disabled>Select</option>
+          <option selected disabled>Select Occupation</option>
           <option value="frontEnd">Front End Instructor</option>
           <option value="rubyRail">Rails Instructor</option>
           <option value="python">Python Instructor</option>
         </select>
-      </label>
     </div>
 
     <div>
        <textarea name="briefBio" placeholder="Brief Bio"></textarea>
     </div>
 
-    <div>
-      <label>Female
+    <div class="genderselect">
+      <div class="female">
         <input type="radio" name="gender" value="Female">
-      </label>
-      <label>Male
+        <label> Female </label>
+      </div>
+      <div class="male">
         <input type="radio" name="gender" value="Male">
-      </label>
+        <label> Male </label>
+      </div>
     </div>
 
     <div>
-      <h3>Notification Preference</h3>
-      <label>SMS Notifications
-        <input type="checkbox" name="notifyPref" value="SMS">
-      </label>
-      <label>Email Notifications
-        <input type="checkbox" name="notifyPref" value="Email"
-      </label>
-    </div>
-
-    <div>
-      <label>I agree to the terms and conditions.
-        <input type="checkbox" name="terms" value="yes">
+      <label class="terms">
+        <input type="checkbox" name="terms" value="yes"> I agree to the terms and conditions.
       </label>
     </div>
 
     <button type="submit">Submit</button>
   </div>
+</div>
 </body>
 </html>
