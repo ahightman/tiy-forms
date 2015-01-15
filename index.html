@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,300italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+ <div class="wrapper">
+  <form method="get" action="/save-user">
+
+    <div>
+      <label>
+        Full Name
+        <input type="text" placeholder="Name" name="userName">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Telephone Number
+        <input type="tel" placeholder="Phone" name="userPhone">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Email Address
+        <input type="email" placeholder="Email Address" name="userEmail">
+      </label>
+
+    <div>
+      <label>Occupation
+        <select name="occupation">
+          <option selected disabled>Select</option>
+          <option value="frontEnd">Front End Instructor</option>
+          <option value="rubyRail">Rails Instructor</option>
+          <option value="python">Python Instructor</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+       <textarea name="briefBio" placeholder="Brief Bio"></textarea>
+    </div>
+
+    <div>
+      <label>Female
+        <input type="radio" name="gender" value="Female">
+      </label>
+      <label>Male
+        <input type="radio" name="gender" value="Male">
+      </label>
+    </div>
+
+    <div>
+      <h3>Notification Preference</h3>
+      <label>SMS Notifications
+        <input type="checkbox" name="notifyPref" value="SMS">
+      </label>
+      <label>Email Notifications
+        <input type="checkbox" name="notifyPref" value="Email"
+      </label>
+    </div>
+
+    <div>
+      <label>I agree to the terms and conditions.
+        <input type="checkbox" name="terms" value="yes">
+      </label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </div>
+</body>
+</html>

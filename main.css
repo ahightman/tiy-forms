@@ -1,0 +1,21 @@
+/* UNIVERSAL */
+
+* {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333333;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper div {
+  margin: .3em 0;
+}
